@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+📱 Snappy – Real‑Time Chat App
+A full‑stack real‑time chat application built using the MERN stack (MongoDB, Express, React, Node.js) and Socket.io. Inspired by the original YouTube tutorial by koolkishan 
+GitHub
++7
+GitHub
++7
+YouTube
++7
+.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🧭 Project Overview
+Real-time messaging between users
 
-## Available Scripts
+User authentication with secure login
 
-In the project directory, you can run:
+MongoDB database for storing users & chat history
 
-### `npm start`
+Responsive UI built with React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+WebSocket communication via Socket.io
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Styled components in the frontend for UI consistency 
+GitHub
++3
+Built At Lightspeed
++3
+Reddit
++3
 
-### `npm test`
+📦 Tech Stack & Key Libraries
+Layer	Technology / Library	Purpose
+Backend	Node.js + Express	Server creation and routing
+MongoDB + Mongoose	Persistent data storage
+Socket.io	Real-time, bidirectional communication
+Frontend	React	UI development
+React Router	Client-side routing
+Styled Components	Styling React components 
+YouTube
++5
+Medium
++5
+Reddit
++5
+General	dotenv	Environment variables
+cors	Cross-Origin Resource Sharing
+Dev & Deployment	Docker + Docker Compose	Optional containerized setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🚀 Setup & Installation
+Prerequisites
+Node.js, npm or yarn
 
-### `npm run build`
+MongoDB (running locally, or via Docker)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+(Optional) Docker & Docker Compose for containerized deployment 
+Reddit
++7
+GitHub
++7
+GitHub
++7
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Local Development (Manual)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone https://github.com/koolkishan/chat-app-react-nodejs.git
+cd chat-app-react-nodejs
 
-### `npm run eject`
+# Setup environment variables
+cd public && mv .env.example .env && cd ../server && mv .env.example .env
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Install dependencies
+cd server && yarn
+cd ../public && yarn
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Run the servers
+# Backend
+cd ../server && yarn start
+# Frontend
+cd ../public && yarn start
+Backend defaults to port 5000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Frontend runs on port 3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open your browser at http://localhost:3000 
+Reddit
++6
+GitHub
++6
+Built At Lightspeed
++6
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+/public      # React frontend
+  ├─ src
+  └─ .env.example
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+/server      # Node.js API + Socket.io server
+  ├─ models
+  ├─ routes
+  ├─ controllers
+  ├─ .env.example
+  └─ server.js (main entry)
+✅ Running Tests
+The project doesn’t include tests out-of-the-box, but you can easily integrate:
 
-### Analyzing the Bundle Size
+Jest for backend testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React Testing Library for frontend components
