@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/snappy/static/css/main.38fdc94e.css",
+    "main.js": "/snappy/static/js/main.d24904bd.js",
+    "static/media/robot.gif": "/snappy/static/media/robot.0617a41936621e9697cd.gif",
+    "static/media/loader.gif": "/snappy/static/media/loader.b40fc3d91ff1f4db53e2.gif",
+    "static/media/logo.svg": "/snappy/static/media/logo.0e93e38195291b3c742a5809c7f00ca5.svg",
+    "index.html": "/snappy/index.html",
+    "main.38fdc94e.css.map": "/snappy/static/css/main.38fdc94e.css.map",
+    "main.d24904bd.js.map": "/snappy/static/js/main.d24904bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38fdc94e.css",
+    "static/js/main.d24904bd.js"
+  ]
+}
