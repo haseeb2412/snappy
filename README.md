@@ -1,68 +1,114 @@
-# Snappy - Chat Application 
-Snappy is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
+# Snappy
 
+Snappy is a modern real-time chat application built with the MERN stack. It provides a smooth user experience for authentication, private messaging, avatar selection, and instant communication using Socket.IO.
 
-![login page](./images/snappy_login.png)
+This project is ideal for showcasing full-stack development skills, real-time features, and a polished React-based interface.
 
-![home page](./images/snappy.png)
+![Login screen](./images/snappy_login.png)
 
-## Installation Guide
+![Chat application interface](./images/snappy.png)
 
-### Requirements
-- [Nodejs](https://nodejs.org/en/download)
-- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
+## Features
 
-Both should be installed and make sure mongodb is running.
-### Installation
+- User registration and login
+- Real-time one-to-one chat
+- Online user presence
+- Avatar selection for personalized profiles
+- Responsive and modern UI
+- MongoDB-backed message and user storage
 
-#### First Method
-```shell
-git clone https://github.com/koolkishan/chat-app-react-nodejs
-cd chat-app-react-nodejs
+## Tech Stack
+
+- Frontend: React, React Router, Socket.IO Client
+- Backend: Node.js, Express.js, Socket.IO
+- Database: MongoDB with Mongoose
+- Styling: CSS and styled-components
+
+## Project Structure
+
+```text
+snappy/
+├── frontend/          # React frontend
+├── server/            # Express backend and API routes
+├── images/            # Screenshots used in this README
+└── README.md
 ```
-Now rename env files from .env.example to .env
-```shell
-cd public
-mv .env.example .env
-cd ..
+
+## Prerequisites
+
+Before running the application, make sure you have:
+
+- Node.js installed
+- MongoDB running locally or remotely
+- A terminal with npm available
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/snappy.git
+cd snappy
+```
+
+2. Set up the backend environment:
+
+Create a .env file inside the server folder with the following variables:
+
+```env
+PORT=5000
+MONGO_URL=mongodb://127.0.0.1:27017/snappy
+```
+
+3. Install dependencies:
+
+```bash
 cd server
-mv .env.example .env
-cd ..
+npm install
+
+cd ../frontend
+npm install
 ```
 
-Now install the dependencies
-```shell
+4. Start the application:
+
+Open two terminals:
+
+Terminal 1 - Backend:
+
+```bash
 cd server
-yarn
-cd ..
-cd public
-yarn
+npm start
 ```
-We are almost done, Now just start the development server.
 
-For Frontend.
-```shell
-cd public
-yarn start
-```
-For Backend.
+Terminal 2 - Frontend:
 
-Open another terminal in folder, Also make sure mongodb is running in background.
-```shell
-cd server
-yarn start
+```bash
+cd frontend
+npm start
 ```
-Done! Now open localhost:3000 in your browser.
 
-#### Second Method
-- This method requires docker and docker-compose to be installed in your system.
-- Make sure you are in the root of your project and run the following command.
+5. Open your browser and visit:
 
-```shell
-docker compose build --no-cache
+```text
+http://localhost:3000
 ```
-after the build is complete run the containers using the following command
-```shell
-docker compose up
-```
-now open localhost:3000 in your browser.
+
+## Usage
+
+- Register a new account or log in with an existing one
+- Start chatting with other users in real time
+- Customize your profile avatar before entering the chat
+
+## Screenshots
+
+- Login experience: [images/snappy_login.png](./images/snappy_login.png)
+- Main chat interface: [images/snappy.png](./images/snappy.png)
+
+## Contributing
+
+Contributions are welcome. If you would like to improve the project, feel free to open an issue or submit a pull request.
+
+## Acknowledgements
+
+This project was built as a full-stack chat application example and is intended for learning, development, and portfolio use.
